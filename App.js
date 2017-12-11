@@ -13,8 +13,8 @@ import {
   Dimensions,
 } from 'react-native';
 import Animation from 'lottie-react-native';
-import source from './lottie.json';
-const { height, width } = Dimensions.get('window');
+import source from './move.json';
+const { width } = Dimensions.get('window');
 
 export default class App extends Component<{}> {
   componentDidMount() {
@@ -31,13 +31,12 @@ export default class App extends Component<{}> {
             }}
             style={{
               width: width,
-              height: 240
+              height: 300
             }}
             loop={true}
             source={source}
           />
         </View>
-
       </View>
     );
   }
@@ -48,6 +47,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffffff'
+    backgroundColor: '#1D3743'
   }
 });
